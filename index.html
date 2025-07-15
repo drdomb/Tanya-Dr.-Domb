@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tanya Dr. Domb</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Tanya Dr. Domb <i class="fas fa-question-circle"></i></h1>
+      <p class="subtitle">Tulis pertanyaanmu untuk Dr. Domb.</p>
+    </header>
+
+    <div class="card input-section">
+      <div class="input-columns">
+        <div class="column">
+          <label for="mantraInput">Mantra:</label>
+          <textarea id="mantraInput" placeholder="&quot;dr. Domb aku mau tanya dong&quot;"></textarea>
+        </div>
+        <div class="column">
+          <label for="questionTextarea">Pertanyaan:</label>
+          <textarea id="questionTextarea" placeholder="Tulis pertanyaanmu di sini..."></textarea>
+        </div>
+      </div>
+      
+      <button id="askButton" class="btn">Tanya Dr. Domb!</button>
+    </div>
+
+    <div id="answerDisplay" class="card answer-section">
+      Dr. Domb tidak dapat menemukan informasi untuk pertanyaan ini. Mohon coba lagi dengan pertanyaan yang lebih spesifik.
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

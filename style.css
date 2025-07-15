@@ -1,0 +1,122 @@
+/* Import Fonts */
+body {
+  font-family: 'Lato', sans-serif; /* Font untuk teks umum */
+  margin: 0;
+  padding: 20px;
+  background-color: #f0f2f5; /* Latar belakang abu-abu terang */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Bayangan lebih halus */
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-family: 'Poppins', sans-serif; /* Font untuk judul */
+  color: #2e8b57; /* Hijau tua */
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.header .subtitle {
+  color: #555;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.header .trick-hint {
+  font-style: italic;
+  color: #777;
+  font-size: 0.95em;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+textarea {
+  width: calc(100% - 20px); /* Kurangi padding */
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1.1em;
+  resize: vertical; /* Izinkan resize vertikal */
+  min-height: 100px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #2e8b57; /* Border hijau saat fokus */
+  box-shadow: 0 0 0 3px rgba(46, 139, 87, 0.2); /* Shadow saat fokus */
+}
+
+/* Placeholder Styling */
+textarea::placeholder {
+  font-style: italic;
+  color: #a0a0a0; /* Sedikit lebih gelap dari #ccc agar lebih terbaca */
+}
+
+.btn {
+  background-color: #3cb371; /* Warna hijau tombol */
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(60, 179, 113, 0.3);
+}
+
+.btn:hover {
+  background-color: #2e8b57; /* Hijau lebih gelap saat hover */
+  transform: translateY(-2px); /* Sedikit efek naik */
+  box-shadow: 0 6px 15px rgba(46, 139, 87, 0.4);
+}
+
+.answer-section {
+  background-color: #e6ffe6; /* Latar belakang hijau muda untuk jawaban */
+  color: #2e8b57; /* Teks jawaban hijau tua */
+  font-size: 1.1em;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+    margin: 10px;
+  }
+  .header h1 {
+    font-size: 2em;
+  }
+  .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1em;
+  }
+}
