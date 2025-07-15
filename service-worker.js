@@ -5,8 +5,8 @@ const urlsToCache = [
   './style.css',
   './script.js',
   './manifest.json',
-  './icons/icon-192x192.png',
-  './icons/icon-512x512.png'
+  './icon-192x192.png',
+  './icon-512x512.png'
   // Tambahkan semua aset statis lain yang perlu di-cache di sini
   // Misalnya: gambar, font tambahan, dll.
 ];
